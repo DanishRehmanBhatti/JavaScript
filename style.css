@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+body{
+    line-height: 1.6;
+    background-color: rgba(175, 202, 99, 0.459);
+}
+
+
+h1{
+    text-align: center;
+    margin:40px 0 60px 0;
+    color: rgb(83, 81, 81);
+}
+form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px 0 20px 0;
+    flex-wrap: wrap;
+}
+#input-box{
+text-shadow: 0 0 0px rgb(0, 0, 0.02);
+padding: 10px 20px ;
+width:60%;
+max-width: 400px;
+font-size: 18px;
+border-radius: 5px;
+color: #333;
+flex-grow: 1;
+margin-bottom: 10px;
+}
+#Search-button{
+    margin-left: 2px;
+    color: rgb(243, 238, 238);
+    background-color: rgb(8, 197, 8);
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    cursor: pointer;
+}
+#search_results{
+display: flex;
+justify-content: space-between;
+margin :0 10px;
+max-width: 1200px;
+}
+#search_result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    text-shadow: 0 0 6px rgb(0, 0, 0.02);
+
+}
+#search_result img {
+    width: 100%;
+    height: 100%;
+    transition:opacity 0.2s ease-in-out ;
+    cursor: pointer;
+}
+#search_result:hover img{
+    opacity: 0.8;
+}
+
+#search_result a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color:wheat;
+    background-color: rgb(17, 212, 138);
+    width: 100%;
+    margin: 50px 50px 50px 50px;
+    text-align: center;
+}
+#show_more_button{
+    width: auto;
+    height: auto;
+    border: none;
+    color: white;
+    background-color: rgb(16, 111, 219);
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    display: none;
+}
+
+#show_more_button:hover{
+    background-color: aqua;
+}
+@media screen and (max-width:1200px ){
+    #search_result{
+        padding: 20px;
+    }
+ #search_results{
+    width: 30%;
+ }   
+}
+@media screen and (max-width:480px ){
+    #search_result{
+        width: 100%;
+     }   
+    }
